@@ -54,8 +54,8 @@ jobs:
       - name: Patch SDE
         run: |
           export SDE_INSTALL=$SDE_INSTALL_DIR
-          sudo ./scripts/dpdk/set-dpdk-sde-target.sh
-          sudo ./scripts/dpdk/patch-dpdk-sde-rpaths.sh
+          ./scripts/dpdk/set-dpdk-sde-target.sh
+          ./scripts/dpdk/patch-dpdk-sde-rpaths.sh
 
       - name: Prune SDE
         run: |
